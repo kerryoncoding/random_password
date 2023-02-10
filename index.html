@@ -9,8 +9,8 @@
   <body>
     <h1>Random Password Generator</h1>
     <p>Password length (6-15 characters): <span class="length">10</span></p>
-    <button>+</button>
-    <button>-</button>
+    <button onclick="addLength()">+</button>
+    <button onclick="subtractLength()">-</button>
     <p>Select allowable characters:</p>
     <ul>
       <li>Uppercase Letters</li>
@@ -18,7 +18,7 @@
       <li>Numbers</li>
       <li>Symbols</li>
     </ul>
-    <button>CREATE PASSWORD</button>
+    <button onclick="createPassword">CREATE PASSWORD</button>
     <div class="passwordField">TBD</div>
     <p>
       const characters
@@ -27,5 +27,6 @@
       "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
       "/"];
     </p>
+    <script src="src/script.js"></script>
   </body>
 </html>
